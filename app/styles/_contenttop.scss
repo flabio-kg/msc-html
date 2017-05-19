@@ -1,6 +1,15 @@
 .content {
   .owlwrap {
     background-image: url('../images/bg-slider.png');
+    @media (max-width: $screen-sm-max) {
+      padding-bottom: 40px;
+    }
+
+    h2 {
+      @media (max-width: $screen-md-max) {
+        padding-top: 20px;
+      }
+    }
 
     .owl-carousel {
       padding-top: 50px;
@@ -18,6 +27,12 @@
           left: 50%;
           transform: translateX(-50%);
           bottom: -20px;
+        }
+        @media (max-width: $screen-md-max) {
+          bottom: 20%;
+        }
+        @media (max-width: $screen-sm-max) {
+          bottom: -3%;
         }
 
         .owl-dot {
@@ -74,6 +89,7 @@
     line-height: 20px;
     font-weight: 400;
     margin-bottom: 2px;
+    padding-bottom: 20px;
     @media (max-width: $screen-xs-max) {
       text-align: center;
       line-height: 19px;

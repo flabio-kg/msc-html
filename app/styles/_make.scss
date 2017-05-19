@@ -31,11 +31,14 @@
     }
 
     &--item {
-      padding: 15px 35px;
+      padding: 15px 45px;
       text-align: center;
       position: relative;
       @media (max-width: $screen-md-min) {
         padding-bottom: 0;
+      }
+      .make5{
+        margin-top: 100px;
       }
     }
 
@@ -46,7 +49,7 @@
         height: 320px;
       }
       @media (max-width: $screen-xs-max) {
-        padding-bottom: 20px;
+        height: 100%;
       }
 
       &:after {
@@ -88,6 +91,7 @@
         padding-top: 20px;
         line-height: 27px;
         font-family: 'Tahoma';
+        padding-bottom: 10px;
         @media (max-width: $screen-sm-min) {
           padding-left: 0;
           font-size: 16px;

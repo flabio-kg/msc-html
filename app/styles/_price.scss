@@ -10,7 +10,7 @@
     height: 710px;
     right: 0;
     bottom: 0;
-    @media (max-width: $screen-sm-max) {
+    @media screen and (max-width: 1800px)  {
       display: none;
     }
   }

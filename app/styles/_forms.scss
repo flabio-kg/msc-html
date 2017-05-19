@@ -1,7 +1,7 @@
 .-dark {
 	background-image: url('../images/forma1.png') !important;
 	background-repeat: no-repeat;
-	min-height: 418px;	
+	min-height: 418px;
 
 	.title_headline {
 		text-align: center;
@@ -15,7 +15,8 @@
 			font-size: 36px;
 			color: #372a1e !important;
 			font-weight: 400;
-			margin-top: 43px;
+			margin-top: 0;
+			padding: 0;
 		}
 	}
 
@@ -42,6 +43,7 @@
 }
 
 .forms {
+	padding-top: 20px;
 	background-image: url('../images/forma2.png');
 	background-repeat: no-repeat;
 	min-height: 418px;
@@ -65,7 +67,9 @@
 		@media (max-width: $screen-sm-max) {
 			padding-top: 30px;
 		}
-
+		@media (max-width: $screen-sm-max) {
+			padding-top: 50px;
+		}
 		input {
 			max-width: 100%;
 			width: 100%;
