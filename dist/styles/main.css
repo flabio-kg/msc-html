@@ -12124,6 +12124,142 @@ body {
   }
 }
 
+.etap {
+  position: relative;
+}
+
+.etap:before {
+  position: absolute;
+  content: '';
+  background-image: url("../images/bg-etap.png");
+  width: 350px;
+  height: 710px;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1800px) {
+  .etap:before {
+    display: none;
+  }
+}
+
+.etap__steps {
+  background-color: #fafafa;
+  padding-top: 65px;
+}
+
+@media (max-width: 991px) {
+  .etap__steps {
+    padding-top: 30px;
+  }
+}
+
+.etap__steps .col-md-3:nth-child(4n) .etap__steps--wrap:after {
+  display: none;
+}
+
+.etap__steps--wrap {
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+}
+
+.etap__steps--wrap:after {
+  position: absolute;
+  content: '';
+  font-family: "font";
+  top: 50%;
+  color: #974e3f;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+  .etap__steps--wrap:after {
+    content: '';
+  }
+}
+
+.etap__steps--wrap img {
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .etap__steps--wrap img {
+    height: 130px;
+  }
+}
+
+.etap__steps p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
+  padding: 0 25px;
+  height: 103px;
+}
+
+@media (max-width: 991px) {
+  .etap__steps p {
+    padding: 0;
+  }
+}
+
+.etap__steps p span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.etap__desc {
+  padding-top: 65px;
+  padding-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+  .etap__desc {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+.etap__desc h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .etap__desc h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .etap__desc h3 {
+    font-size: 20px;
+  }
+}
+
+.etap__desc p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .etap__desc p {
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 20px;
+  }
+}
+
 .articles {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -12475,142 +12611,6 @@ body {
 .articles__link a:hover {
   color: #A14537;
   text-decoration: none;
-}
-
-.etap {
-  position: relative;
-}
-
-.etap:before {
-  position: absolute;
-  content: '';
-  background-image: url("../images/bg-etap.png");
-  width: 350px;
-  height: 710px;
-  left: 0;
-  bottom: 0;
-}
-
-@media screen and (max-width: 1800px) {
-  .etap:before {
-    display: none;
-  }
-}
-
-.etap__steps {
-  background-color: #fafafa;
-  padding-top: 65px;
-}
-
-@media (max-width: 991px) {
-  .etap__steps {
-    padding-top: 30px;
-  }
-}
-
-.etap__steps .col-md-3:nth-child(4n) .etap__steps--wrap:after {
-  display: none;
-}
-
-.etap__steps--wrap {
-  text-align: center;
-  max-width: 100%;
-  position: relative;
-}
-
-.etap__steps--wrap:after {
-  position: absolute;
-  content: '';
-  font-family: "font";
-  top: 50%;
-  color: #974e3f;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-@media (max-width: 991px) {
-  .etap__steps--wrap:after {
-    content: '';
-  }
-}
-
-.etap__steps--wrap img {
-  max-width: 100%;
-}
-
-@media (max-width: 991px) {
-  .etap__steps--wrap img {
-    height: 130px;
-  }
-}
-
-.etap__steps p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #000;
-  padding: 0 25px;
-  height: 103px;
-}
-
-@media (max-width: 991px) {
-  .etap__steps p {
-    padding: 0;
-  }
-}
-
-.etap__steps p span {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.etap__desc {
-  padding-top: 65px;
-  padding-bottom: 35px;
-}
-
-@media (max-width: 991px) {
-  .etap__desc {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-}
-
-.etap__desc h3 {
-  font-size: 25px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 30px;
-}
-
-@media (max-width: 991px) {
-  .etap__desc h3 {
-    font-size: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .etap__desc h3 {
-    font-size: 20px;
-  }
-}
-
-.etap__desc p {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  margin: 0;
-  padding-bottom: 30px;
-}
-
-@media (max-width: 991px) {
-  .etap__desc p {
-    font-size: 16px;
-    line-height: 22px;
-    padding-bottom: 20px;
-  }
 }
 
 .terms {
