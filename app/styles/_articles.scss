@@ -277,17 +277,31 @@
 		border-radius: 10px;
 		padding: 20px 26px;
 		margin-top: 15px;
+		text-align: center;
 
 		a {
 			font-size: 14px;
 			font-weight: 400;
 			color: #372a1e;
 			text-decoration: underline;
+			display: block;
 			transition: all 0.3s;
 
 			&:hover {
 				color: #A14537;
 				text-decoration: none;
+			}
+		}
+		.thumbnail{
+			border: none;
+			width: 75px;
+			height: 70px;
+			background-color: #F3EDE2;
+			margin: 0 auto;
+			padding-top: 12px;
+			margin-bottom: 10px;
+			img{
+				
 			}
 		}
 	}

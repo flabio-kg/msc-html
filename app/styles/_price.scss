@@ -10,7 +10,7 @@
     height: 710px;
     right: 0;
     bottom: 0;
-    @media screen and (max-width: 1800px) {
+    @media (max-width: $screen-sm-max) {
       display: none;
     }
   }
@@ -23,40 +23,57 @@
       padding: 30px;
       text-align: center;
     }
+    @media (max-width: $screen-xs-max){
+      padding-top: 50px;
+    }
 
     li {
       display: inline-block;
       float: none;
 
-      &:active {}
+      &.active > a {
+        background-color: #826e6f;
+        border-radius: 5px;
+        color: #fff;
 
-      a {
-        width: 100%;
-        height: 55px;
-        text-align: center;
-        margin: 0;
-        border: none;
-        padding: 15px;
-        @media (max-width: $screen-sm-max) {
-          padding: 10px;
+        &,
+        &:focus,
+        &:hover {
+          border: none;
+          cursor: default;
         }
       }
 
-      i {
-        font-size: 40px;
+      a {
         color: #826e6f;
-        padding: 25px;
+        width: 124px;
+        height: 124px;
+        text-align: center;
+        margin: 0;
+        border: none;
+        font-size: 60px;
+        line-height: 80px;
+        padding: 20px;
         @media (max-width: $screen-sm-max) {
           padding: 10px;
+          line-height: 100px;
+          margin: 10px;
         }
 
         &:hover {
-          border: transparent;
           background-color: #826e6f;
           border-radius: 5px;
           color: #fff;
         }
+        .icon-model{
+          margin-left: -10px;
+        }
+        .icon-bus{
+          margin-left: -30px;
+          font-size: 50px;
+        }
       }
+
     }
   }
 

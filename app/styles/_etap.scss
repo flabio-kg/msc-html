@@ -9,7 +9,8 @@
     height: 710px;
     left: 0;
     bottom: 0;
-    @media screen and (max-width: 1800px) {
+    z-index: -1;
+    @media (max-width: $screen-sm-max) {
       display: none;
     }
   }

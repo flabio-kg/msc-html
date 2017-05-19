@@ -36,6 +36,12 @@
   }
   &__contacts{
     padding-top: 10px;
+    @media (max-width: $screen-sm-max){
+      text-align: right;
+    }
+    @media (max-width: $screen-sm-min){
+      text-align: center;
+    }
     ul{
       padding-left: 0;
       li{
@@ -68,6 +74,9 @@
           top: 5px;
           font-size: 45px;
           color: #332318;
+          @media (max-width: $screen-sm-max){
+            left: 130px;
+          }
           @media (max-width: $screen-xs-max){
             display: none;
           }
@@ -77,6 +86,9 @@
           left: -25px;
           font-size: 15px;
           color: #332318;
+          @media (max-width: $screen-sm-max){
+            left: 155px;
+          }
           @media (max-width: $screen-xs-max){
             display: none;
           }
