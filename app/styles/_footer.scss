@@ -4,6 +4,7 @@
   background-color: #332318;
   @media (max-width: $screen-sm-max){
     text-align: center;
+    padding-bottom: 25px;
   }
   &__text{
     position: relative;
@@ -12,7 +13,7 @@
       background-image: url('../images/map.png');
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       width: 168px;
       position: absolute;
       left: 50%;

@@ -1,11 +1,14 @@
 $icon-font-path: '../fonts/';
-@import "../fonts/icons/css/font.css"; // bower:scss
- @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
- @import "bower_components/font-awesome/scss/font-awesome.scss";
- // endbower
+
+@import "../fonts/icons/css/font.css"; 
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
 @import "_helpers.scss";
 @import "_header.scss";
-@import "_articles.scss";
 @import "_contenttop.scss";
 @import "_price.scss";
 @import "_about.scss";
@@ -15,5 +18,5 @@ $icon-font-path: '../fonts/';
 @import "_terms.scss";
 @import "_work.scss";
 @import "_forms.scss";
-@import "_header.scss";
+@import "_popup.scss";
 @import "_footer.scss";

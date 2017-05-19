@@ -2,6 +2,10 @@
 
 $(document).ready(function () {
 
+  $('.popup-content').magnificPopup({
+    type: 'inline'
+  });
+
   $('.header__mnu ul').clone().appendTo('.mmenu-nav');
 
   var $menu = $('.mmenu-nav').mmenu({

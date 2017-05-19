@@ -161,13 +161,16 @@
 	&__contact {
 		max-width: 100%;
 		width: 100%;
-		height: 245px;
+		min-height: 100px;
+		padding-bottom: 20px;
 		background-color: #806566;
 		border-radius: 10px;
 		text-align: center;
 		padding-top: 20px;
 		@media (max-width: $screen-sm-max) {
 			margin-top: 15px;
+			min-height: 100px;
+			padding-bottom: 20px;
 		}
 
 		p {
@@ -207,7 +210,7 @@
 					font-family: 'Roboto', sans-serif;
 					font-weight: 400;
 					transition: all 0.3s;
-					@media (max-width: $screen-xs-max) {
+					@media (max-width: $screen-md-max) {
 						font-size: 16px;
 					}
 
@@ -219,7 +222,7 @@
 				.-litle {
 					font-size: 16px;
 					text-decoration: underline;
-					@media (max-width: $screen-xs-max) {
+					@media (max-width: $screen-md-max) {
 						font-size: 13px;
 					}
 				}
@@ -230,6 +233,10 @@
 					margin-top: -5px;
 					font-size: 45px;
 					color: #fff;
+					@media (max-width: $screen-md-max) {
+						left: 20px;
+						font-size: 40px;
+					}
 					@media (max-width: $screen-sm-max) {
 						display: none;
 					}
@@ -240,6 +247,10 @@
 					left: 55px;
 					font-size: 15px;
 					color: #fff;
+					@media (max-width: $screen-md-max) {
+						left: 45px;
+						font-size: 12px;
+					}
 					@media (max-width: $screen-sm-max) {
 						display: none;
 					}
@@ -253,12 +264,20 @@
 		border-radius: 10px 10px 0 0;
 		padding: 15px;
 		margin-top: 15px;
+		position: relative;
+
+		img{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 
 		h3 {
 			font-size: 15px;
 			color: #fff;
 			font-weight: 700;
 			margin: 0;
+			padding-left: 30px;
 			text-transform: uppercase;
 		}
 	}
@@ -307,7 +326,7 @@
 	}
 
 	&__link {
-		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28);
+		box-shadow: 0 8px 25px -8px rgba(192,192,192,1);
 		padding-bottom: 10px;
 		margin-top: 20px;
 
