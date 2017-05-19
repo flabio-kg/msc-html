@@ -1,0 +1,25 @@
+{
+  "name": "msc-html",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "owl.carousel": "owl-carousel2#^2.2.1",
+    "font-awesome": "^4.7.0",
+    "magnific-popup": "^1.1.0",
+    "jQuery.mmenu": "^6.0.2"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}

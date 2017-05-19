@@ -1,0 +1,56 @@
+.work {
+  position: relative;
+  &:after {
+		position: absolute;
+		content: '';
+		background-image: url('../images/kust.png');
+		background-repeat: no-repeat;
+		width: 200px;
+		min-height: 150px;
+		right: 0;
+		top: 55%;
+		@media screen and (max-width: 1800px) {
+			display: none;
+		}
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		background-image: url('../images/petr.png');
+		background-repeat: no-repeat;
+		width: 350px;
+		height: 325px;
+		left: 0;
+		bottom: -5%;
+		@media screen and (max-width: 1800px) {
+			display: none;
+		}
+	}
+  &__item {
+    padding-top: 35px;
+    position: relative;
+    @media (min-width: $screen-sm-max) {
+      padding-top: 70px;
+    }
+    @media (min-width: $screen-md-max) {
+      padding-top: 35px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 35px;
+      line-height: 40px;
+      margin: 0;
+      padding-bottom: 30px;
+      font-weight: 400;
+      @media (max-width: $screen-sm-max) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.header{
+  padding-top: 10px;
+  min-height: 115px;
+  background-color: #fff;
+  @media (max-width: $screen-xs-max){
+    text-align: center;
+  }
+  &__text{
+    position: relative;
+    &:before{
+      content: '';
+      background-image: url('../images/map_top.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 168px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    p{
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      z-index: 1;
+      @media (max-width: $screen-xs-max){
+        font-size: 16px;
+      }
+    }
+  }
+  &__contacts{
+    padding-top: 10px;
+    ul{
+      padding-left: 0;
+      li{
+        display: block;
+        list-style-type: none;
+        a{
+          text-decoration: none;
+          font-size: 20px;
+          color: #372a1e;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+          transition: all .3s;
+          @media (max-width: $screen-xs-max){
+            font-size: 16px;
+          }
+          &:hover{
+            color: #806566;
+          }
+        }
+        .-litle{
+          font-size: 16px;
+          text-decoration: underline;
+          @media (max-width: $screen-xs-max){
+            font-size: 13px;
+          }
+        }
+        .icon-phonechat{
+          position: absolute;
+          left: -50px;
+          top: 5px;
+          font-size: 45px;
+          color: #332318;
+          @media (max-width: $screen-xs-max){
+            display: none;
+          }
+        }
+        .icon-envelope{
+          position: absolute;
+          left: -25px;
+          font-size: 15px;
+          color: #332318;
+          @media (max-width: $screen-xs-max){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__menu{
+    height: 45px;
+    margin-top: 10px;
+    background-color: #332318;
+  }
+  &__mnu{
+    @media (max-width: $screen-sm-max){
+      display: none;
+    }
+    ul{
+      padding-left: 0;
+      margin: 0;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 50px;
+        position: relative;
+        @media (max-width: $screen-md-max){
+          padding-right: 20px;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+        a{
+          font-size: 16px;
+          color: #f3efe5;
+          line-height: 45px;
+          font-weight: 400;
+          display: block;
+          text-decoration: none;
+          transition: all .3s;
+          &:hover{
+            color: #806566;
+          }          
+        }
+        i{
+          font-size: 6px;
+          color: #f3efe5;
+          position: absolute;
+          left: -15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  &__navtrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin-top: 0px;
+    margin-right: 0px;
+    position: absolute;
+    display: none;
+    font-size: 35px;
+    color: #fff;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 999;
+    @media (max-width: $screen-sm-max) {
+      display: block;
+    }
+    i {
+      background-color: #f3efe5;
+      border-radius: 2px;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+    }
+    i:nth-child(1) {
+      -webkit-animation: outT 0.8s backwards;
+      animation: outT 0.8s backwards;
+      -webkit-animation-direction: reverse;
+      animation-direction: reverse;
+    }
+    i:nth-child(2) {
+      margin: 5px 0;
+      -webkit-animation: outM 0.8s backwards;
+      animation: outM 0.8s backwards;
+      -webkit-animation-direction: reverse;
+      animation-direction: reverse;
+    }
+    i:nth-child(3) {
+      -webkit-animation: outBtm 0.8s backwards;
+      animation: outBtm 0.8s backwards;
+      -webkit-animation-direction: reverse;
+      animation-direction: reverse;
+    }
+    &.-active i:nth-child(1) {
+      -webkit-animation: inT 0.8s forwards;
+      animation: inT 0.8s forwards;
+    }
+    &.-active i:nth-child(2) {
+      -webkit-animation: inM 0.8s forwards;
+      animation: inM 0.8s forwards;
+    }
+    &.-active i:nth-child(3) {
+      -webkit-animation: inBtm 0.8s forwards;
+      animation: inBtm 0.8s forwards;
+    }
+  }
+}
