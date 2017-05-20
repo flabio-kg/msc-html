@@ -34,6 +34,9 @@
         @media (max-width: $screen-sm-max) {
           bottom: -3%;
         }
+        @media screen and (min-width: 1199px)  {
+          bottom: 10%;
+        }
 
         .owl-dot {
           width: 20px;

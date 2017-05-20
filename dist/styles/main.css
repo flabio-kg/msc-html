@@ -11279,6 +11279,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1199px) {
+  .content .owlwrap .owl-carousel .owl-dots {
+    bottom: 10%;
+  }
+}
+
 .content .owlwrap .owl-carousel .owl-dots .owl-dot {
   width: 20px;
   display: inline-block;
@@ -11986,7 +11992,6 @@ body {
 }
 
 .etap__steps {
-  background-color: #fafafa;
   padding-top: 65px;
 }
 
