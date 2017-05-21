@@ -12,7 +12,7 @@
       background-image: url('../images/map_top.png');
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       width: 168px;
       position: absolute;
       left: 50%;
@@ -124,6 +124,16 @@
         &:last-child{
           padding-right: 0;
         }
+        &:before{
+          content: '\e80c';
+          font-family: font;
+          position: absolute;
+          font-size: 6px;
+          color: #f3efe5;
+          left: -15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
         a{
           font-size: 16px;
           color: #f3efe5;
@@ -135,14 +145,6 @@
           &:hover{
             color: #806566;
           }          
-        }
-        i{
-          font-size: 6px;
-          color: #f3efe5;
-          position: absolute;
-          left: -15px;
-          top: 50%;
-          transform: translateY(-50%);
         }
       }
     }

@@ -10977,7 +10977,7 @@ body {
   background-image: url("../images/map_top.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 168px;
   position: absolute;
   left: 50%;
@@ -11138,6 +11138,18 @@ body {
   padding-right: 0;
 }
 
+.header__mnu ul li:before {
+  content: '\e80c';
+  font-family: font;
+  position: absolute;
+  font-size: 6px;
+  color: #f3efe5;
+  left: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .header__mnu ul li a {
   font-size: 16px;
   color: #f3efe5;
@@ -11150,16 +11162,6 @@ body {
 
 .header__mnu ul li a:hover {
   color: #806566;
-}
-
-.header__mnu ul li i {
-  font-size: 6px;
-  color: #f3efe5;
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .header__navtrigger {
@@ -12402,15 +12404,24 @@ p {
   padding-right: 10px;
 }
 
+.articles__vidget {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.articles__vidget:last-child {
+  margin-bottom: 0;
+}
+
 .articles__contact {
   max-width: 100%;
   width: 100%;
   min-height: 100px;
   padding-bottom: 20px;
-  background-color: #806566;
-  border-radius: 10px;
-  text-align: center;
   padding-top: 20px;
+  background-color: #806566;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -12532,9 +12543,7 @@ p {
 
 .articles__wrap {
   background-color: #A14537;
-  border-radius: 10px 10px 0 0;
   padding: 15px;
-  margin-top: 15px;
   position: relative;
 }
 
@@ -12556,7 +12565,6 @@ p {
 
 .articles__sidebar {
   background-color: #fff;
-  border-radius: 0 0 10px 10px;
   padding: 26px;
 }
 
@@ -12568,9 +12576,7 @@ p {
 
 .articles__bott {
   background-color: #fff;
-  border-radius: 10px;
   padding: 20px 26px;
-  margin-top: 15px;
   text-align: center;
 }
 
