@@ -38,19 +38,48 @@ $(document).ready(function() {
     $('.js-navtrigger').toggleClass('-active');
   });
 
+  if (Modernizr.mq('(max-width: 767px)')) {
+    $('a.-pagescroll[href*="#"]:not([href="#"])').click(function() {
+      API.close();
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return true;
+        }
+      }
+    });
+  } else {
+    $('a.-pagescroll[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return true;
+        }
+      }
+    });
+  }
+
 
   $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 10,
     nav: false,
     dots: true,
     items: 1,
     animateOut: 'fadeOut',
     mouseDrag: false,
+    autoHeight:true,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
 
-  })
+  });
 
 });

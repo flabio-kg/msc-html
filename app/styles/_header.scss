@@ -42,8 +42,13 @@
     @media (max-width: $screen-sm-min){
       text-align: center;
     }
+    .height{
+      min-height: 56px;
+      overflow: hidden;
+    }
     ul{
       padding-left: 0;
+      margin: 0;      
       li{
         display: block;
         list-style-type: none;
@@ -77,7 +82,7 @@
           @media (max-width: $screen-sm-max){
             left: 130px;
           }
-          @media (max-width: $screen-xs-max){
+          @media (max-width: $screen-sm-min){
             display: none;
           }
         }
@@ -89,7 +94,7 @@
           @media (max-width: $screen-sm-max){
             left: 155px;
           }
-          @media (max-width: $screen-xs-max){
+          @media (max-width: $screen-sm-min){
             display: none;
           }
         }

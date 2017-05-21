@@ -28,42 +28,59 @@
 			padding-bottom: 5px;
 			margin-bottom: 10px;
 			display: inline-block;
-			border-bottom: 1px #332318 solid;
-			@media (max-width: $screen-sm-max) {
-				font-size: 25px;
-			}
-			@media (max-width: $screen-xs-max) {
-				font-size: 20px;
+			a{
+				font-size: 30px;
+				color: #372a1e;
+				font-weight: 600;
+				padding-bottom: 5px;
+				margin-bottom: 10px;
+				display: inline-block;
+				text-decoration: underline;
+				transition: all .3s;
+				@media (max-width: $screen-sm-max) {
+					font-size: 25px;
+				}
+				@media (max-width: $screen-xs-max) {
+					font-size: 20px;
+				}
+				&:hover{
+					color: #806566;
+				}
 			}
 		}
 
-		ul {
+		ol {
+			counter-reset: item;
 			li {
 				display: block;
-				list-style-type: none;
-				padding-top: 15px;
+				padding-bottom: 15px;
 				position: relative;
 
-				span {
+				&:before {
+					content: counter(item) "";
 					font-size: 12px;
 					color: #fff;
 					background-color: #C8967B;
 					border-radius: 10em;
 					text-align: center;
+					display: inline-block;
+					counter-increment: item;
 					width: 25px;
 					height: 25px;
 					line-height: 25px;
-					display: block;
+					margin-left: -3em;
 					position: absolute;
-					left: -40px;
 				}
 			}
 		}
 
-		.ul {
+		ul {
 			padding-left: 30px;
 
 			li {
+				display: block;
+				padding-top: 15px;
+				position: relative;
 				&:before {
 					content: '';
 					position: absolute;

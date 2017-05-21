@@ -32,6 +32,12 @@
       color: #F3EDE2;
       position: relative;
       z-index: 1;
+      max-width: 350px;
+      width: 100%;
+      @media (max-width: $screen-sm-max){
+        text-align: center;
+        display: inline-block;
+      }
       @media (max-width: $screen-xs-max){
         font-size: 13px;
       }

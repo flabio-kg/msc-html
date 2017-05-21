@@ -93,11 +93,14 @@
         }
         i{
           font-size: 60px;
+          @media (max-width: $screen-md-max) {
+            font-size: 50px;
+          }
           @media (max-width: $screen-sm-max) {
-            font-size: 40px;
+            font-size: 35px;
           }
           @media (max-width: $screen-xs-max) {
-            font-size: 25px;
+            font-size: 22px;
           }
           @media screen and (max-width: 533px)  {
             font-size: 16px;
@@ -117,8 +120,11 @@
           }
         }
         .icon-bus{
-          margin-left: -30px;
-          font-size: 50px;
+          margin-left: -35px;
+          font-size: 60px;
+          @media (max-width: $screen-md-max) {
+            font-size: 50px;
+          }
           @media (max-width: $screen-sm-max) {
             font-size: 35px;
             margin-left: -20px;
@@ -129,7 +135,7 @@
           }
           @media screen and (max-width: 533px)  {
             font-size: 16px;
-            margin-left: -5px;
+            margin-left: -10px;
           }
           @media (max-width: $screen-xs-min) {
             margin-left: -8px;

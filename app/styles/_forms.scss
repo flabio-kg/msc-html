@@ -1,7 +1,7 @@
 .-dark {
 	background-image: url('../images/forma1.png') !important;
 	background-repeat: no-repeat;
-	min-height: 418px;
+	padding-bottom: 50px !important;
 
 	.title_headline {
 		text-align: center;
@@ -46,8 +46,9 @@
 	padding-top: 20px;
 	background-image: url('../images/forma2.png');
 	background-repeat: no-repeat;
-	min-height: 418px;
+	// min-height: 418px;
 	position: relative;
+	padding-bottom: 20px;
 	@media (max-width: $screen-sm-max) {
 		background-repeat: repeat;
 		padding-bottom: 20px;
