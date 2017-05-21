@@ -11412,6 +11412,14 @@ p {
 .price .nav-tabs li {
   display: inline-block;
   float: none;
+  color: #826e6f;
+  width: 124px;
+  height: 124px;
+  text-align: center;
+  margin: 0;
+  border: none;
+  padding: 0;
+  position: relative;
 }
 
 .price .nav-tabs li.active > a {
@@ -11420,24 +11428,8 @@ p {
   color: #fff;
 }
 
-.price .nav-tabs li.active > a, .price .nav-tabs li.active > a:focus, .price .nav-tabs li.active > a:hover {
-  border: none;
-  cursor: default;
-}
-
-.price .nav-tabs li a {
-  color: #826e6f;
-  width: 124px;
-  height: 124px;
-  text-align: center;
-  margin: 0;
-  border: none;
-  line-height: 124px;
-  padding: 0;
-}
-
 @media (max-width: 1199px) {
-  .price .nav-tabs li a {
+  .price .nav-tabs li {
     width: 100px;
     height: 100px;
     line-height: 100px;
@@ -11446,7 +11438,7 @@ p {
 }
 
 @media (max-width: 991px) {
-  .price .nav-tabs li a {
+  .price .nav-tabs li {
     padding: 0;
     width: 80px;
     height: 80px;
@@ -11455,7 +11447,7 @@ p {
 }
 
 @media (max-width: 767px) {
-  .price .nav-tabs li a {
+  .price .nav-tabs li {
     padding: 0;
     width: 50px;
     height: 50px;
@@ -11464,7 +11456,7 @@ p {
 }
 
 @media screen and (max-width: 533px) {
-  .price .nav-tabs li a {
+  .price .nav-tabs li {
     padding: 0;
     width: 35px;
     height: 35px;
@@ -11473,12 +11465,26 @@ p {
 }
 
 @media (max-width: 480px) {
-  .price .nav-tabs li a {
+  .price .nav-tabs li {
     padding: 0;
     width: 25px;
     height: 25px;
     line-height: 25px;
   }
+}
+
+.price .nav-tabs li a {
+  color: #332318;
+  font-size: 16px;
+  font-weight: 400;
+  height: 128px;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  display: block;
+  vertical-align: middle;
 }
 
 .price .nav-tabs li a:hover {
@@ -11487,8 +11493,48 @@ p {
   color: #fff;
 }
 
+@media (max-width: 1199px) {
+  .price .nav-tabs li a {
+    font-size: 14px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 991px) {
+  .price .nav-tabs li a {
+    font-size: 11px;
+    padding: 0;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price .nav-tabs li a {
+    font-size: 8px;
+    padding: 0;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .price .nav-tabs li a {
+    font-size: 6px;
+    padding: 0;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .price .nav-tabs li a {
+    font-size: 5px;
+    padding: 0;
+    height: 30px;
+  }
+}
+
 .price .nav-tabs li a i {
-  font-size: 60px;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 @media (max-width: 1199px) {
@@ -11500,47 +11546,34 @@ p {
 @media (max-width: 991px) {
   .price .nav-tabs li a i {
     font-size: 35px;
+    line-height: 45px;
   }
 }
 
 @media (max-width: 767px) {
   .price .nav-tabs li a i {
     font-size: 22px;
+    line-height: 30px;
   }
 }
 
 @media screen and (max-width: 533px) {
   .price .nav-tabs li a i {
     font-size: 16px;
+    line-height: 22px;
   }
 }
 
 @media (max-width: 480px) {
   .price .nav-tabs li a i {
     font-size: 13px;
-    margin-top: -15px;
-  }
-}
-
-.price .nav-tabs li a .icon-model {
-  margin-left: -10px;
-}
-
-@media (max-width: 767px) {
-  .price .nav-tabs li a .icon-model {
-    margin-left: -5px;
-  }
-}
-
-@media (max-width: 480px) {
-  .price .nav-tabs li a .icon-model {
-    margin-left: -2px;
+    line-height: 15px;
   }
 }
 
 .price .nav-tabs li a .icon-bus {
-  margin-left: -35px;
-  font-size: 60px;
+  margin-left: -28px;
+  font-size: 50px;
 }
 
 @media (max-width: 1199px) {

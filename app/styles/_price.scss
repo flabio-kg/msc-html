@@ -32,96 +32,117 @@
     li {
       display: inline-block;
       float: none;
-
+      color: #826e6f;
+      width: 124px;
+      height: 124px;
+      text-align: center;
+      margin: 0;
+      border: none;
+      padding: 0;
+      position: relative;
       &.active > a {
         background-color: #826e6f;
         border-radius: 5px;
         color: #fff;
-
-        &,
-        &:focus,
-        &:hover {
-          border: none;
-          cursor: default;
-        }
       }
-
+      @media (max-width: $screen-md-max) {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        padding: 0;
+      }
+      @media (max-width: $screen-sm-max) {
+        padding: 0;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+      @media screen and (max-width: 533px)  {
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+      }
+      @media (max-width: $screen-xs-min) {
+        padding: 0;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+      }
+      
       a {
-        color: #826e6f;
-        width: 124px;
-        height: 124px;
+        color: #332318;
+        font-size: 16px;
+        font-weight: 400;
+        height: 128px;
+        overflow: hidden;
+        text-transform: uppercase;
         text-align: center;
         margin: 0;
-        border: none;        
-        line-height: 124px;
-        padding: 0;
-        @media (max-width: $screen-md-max) {
-          width: 100px;
-          height: 100px;
-          line-height: 100px;
-          padding: 0;
-        }
-        @media (max-width: $screen-sm-max) {
-          padding: 0;
-          width: 80px;
-          height: 80px;
-          line-height: 80px;
-        }
-        @media (max-width: $screen-xs-max) {
-          padding: 0;
-          width: 50px;
-          height: 50px;
-          line-height: 50px;
-        }
-        @media screen and (max-width: 533px)  {
-          padding: 0;
-          width: 35px;
-          height: 35px;
-          line-height: 35px;
-        }
-        @media (max-width: $screen-xs-min) {
-          padding: 0;
-          width: 25px;
-          height: 25px;
-          line-height: 25px;
-        }
-
+        padding: 5px;
+        display: block;
+        vertical-align: middle;
         &:hover {
           background-color: #826e6f;
           border-radius: 5px;
           color: #fff;
         }
+        @media (max-width: $screen-md-max) {
+          font-size: 14px;
+          height: 110px;
+        }
+        @media (max-width: $screen-sm-max) {
+          font-size: 11px;
+          padding: 0;
+          height: 80px;
+        }
+        @media (max-width: $screen-sm-min) {
+          font-size: 8px;
+          padding: 0;
+          height: 60px;
+        }
+        @media screen and (max-width: 533px) {
+          font-size: 6px;
+          padding: 0;
+          height: 40px;
+        }
+        @media (max-width: $screen-xs-min) {
+          font-size: 5px;
+          padding: 0;
+          height: 30px;
+        }
         i{
-          font-size: 60px;
+          font-size: 50px;
+          line-height: 60px;
           @media (max-width: $screen-md-max) {
             font-size: 50px;
           }
           @media (max-width: $screen-sm-max) {
             font-size: 35px;
+            line-height: 45px;
           }
           @media (max-width: $screen-xs-max) {
             font-size: 22px;
+            line-height: 30px;
           }
-          @media screen and (max-width: 533px)  {
+          @media screen and (max-width: 533px) {
             font-size: 16px;
+            line-height: 22px;
           }
           @media (max-width: $screen-xs-min) {
             font-size: 13px;
-            margin-top: -15px;
-          }
-        }
-        .icon-model{
-          margin-left: -10px;
-          @media (max-width: $screen-xs-max) {
-            margin-left: -5px;
-          }
-          @media (max-width: $screen-xs-min) {
-            margin-left: -2px;
+            line-height: 15px;
           }
         }
         .icon-bus{
-          margin-left: -35px;
-          font-size: 60px;
+          margin-left: -28px;
+          font-size: 50px;
           @media (max-width: $screen-md-max) {
             font-size: 50px;
           }
