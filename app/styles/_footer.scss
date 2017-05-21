@@ -49,6 +49,10 @@
     @media (max-width: $screen-sm-max){
       text-align: center;
     }
+    .height{
+      min-height: 56px;
+      overflow: hidden;
+    }
     ul{
       padding-left: 0;
       li{

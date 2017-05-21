@@ -12135,6 +12135,82 @@ p {
   }
 }
 
+.terms {
+  position: relative;
+}
+
+.terms__item {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .terms__item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.terms__item ul {
+  padding: 0 0 25px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .terms__item ul {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .terms__item ul {
+    padding-top: 50px;
+  }
+}
+
+.terms__item ul li {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .terms__item ul li {
+    padding-bottom: 0;
+  }
+}
+
+.terms__item ul li i {
+  font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .terms__item ul li i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms__item ul li {
+    font-size: 16px;
+  }
+}
+
+.terms__item ul li span {
+  font-size: 18px;
+  color: #372a1e;
+  font-weight: 400;
+}
+
+.terms__item p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
 .articles {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -12551,82 +12627,6 @@ p {
   text-decoration: none;
 }
 
-.terms {
-  position: relative;
-}
-
-.terms__item {
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .terms__item {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-.terms__item ul {
-  padding: 0 0 25px;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .terms__item ul {
-    padding-top: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .terms__item ul {
-    padding-top: 50px;
-  }
-}
-
-.terms__item ul li {
-  font-size: 24px;
-  font-weight: 700;
-  color: #000;
-  list-style-type: none;
-  padding-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .terms__item ul li {
-    padding-bottom: 0;
-  }
-}
-
-.terms__item ul li i {
-  font-size: 35px;
-}
-
-@media (max-width: 768px) {
-  .terms__item ul li i {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .terms__item ul li {
-    font-size: 16px;
-  }
-}
-
-.terms__item ul li span {
-  font-size: 18px;
-  color: #372a1e;
-  font-weight: 400;
-}
-
-.terms__item p {
-  font-size: 18px;
-  line-height: 25px;
-  margin: 0;
-  padding-bottom: 30px;
-}
-
 .work {
   position: relative;
 }
@@ -12963,6 +12963,11 @@ p {
   .footer__contacts {
     text-align: center;
   }
+}
+
+.footer__contacts .height {
+  min-height: 56px;
+  overflow: hidden;
 }
 
 .footer__contacts ul {
