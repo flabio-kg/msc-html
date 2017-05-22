@@ -70,7 +70,7 @@ $(document).ready(function () {
     items: 1,
     animateOut: 'fadeOut',
     mouseDrag: false,
-    autoHeight: true,
+    autoHeight: false,
     autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true

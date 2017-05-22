@@ -11446,33 +11446,6 @@ p {
   }
 }
 
-@media (max-width: 767px) {
-  .price .nav-tabs li {
-    padding: 0;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-}
-
-@media screen and (max-width: 533px) {
-  .price .nav-tabs li {
-    padding: 0;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-  }
-}
-
-@media (max-width: 480px) {
-  .price .nav-tabs li {
-    padding: 0;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-  }
-}
-
 .price .nav-tabs li a {
   color: #332318;
   font-size: 16px;
@@ -11516,25 +11489,10 @@ p {
   }
 }
 
-@media screen and (max-width: 533px) {
-  .price .nav-tabs li a {
-    font-size: 6px;
-    padding: 0;
-    height: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .price .nav-tabs li a {
-    font-size: 5px;
-    padding: 0;
-    height: 30px;
-  }
-}
-
 .price .nav-tabs li a i {
   font-size: 50px;
   line-height: 60px;
+  display: block;
 }
 
 @media (max-width: 1199px) {
@@ -11547,27 +11505,6 @@ p {
   .price .nav-tabs li a i {
     font-size: 35px;
     line-height: 45px;
-  }
-}
-
-@media (max-width: 767px) {
-  .price .nav-tabs li a i {
-    font-size: 22px;
-    line-height: 30px;
-  }
-}
-
-@media screen and (max-width: 533px) {
-  .price .nav-tabs li a i {
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .price .nav-tabs li a i {
-    font-size: 13px;
-    line-height: 15px;
   }
 }
 
@@ -11586,27 +11523,6 @@ p {
   .price .nav-tabs li a .icon-bus {
     font-size: 35px;
     margin-left: -20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .price .nav-tabs li a .icon-bus {
-    font-size: 22px;
-    margin-left: -10px;
-  }
-}
-
-@media screen and (max-width: 533px) {
-  .price .nav-tabs li a .icon-bus {
-    font-size: 16px;
-    margin-left: -10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .price .nav-tabs li a .icon-bus {
-    margin-left: -8px;
-    font-size: 12px;
   }
 }
 
