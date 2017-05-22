@@ -13020,7 +13020,7 @@ p {
 
 .footer__contacts ul li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   color: #F3EDE2;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -13033,24 +13033,36 @@ p {
   }
 }
 
+@media (max-width: 1199px) {
+  .footer__contacts ul li a {
+    font-size: 20px;
+  }
+}
+
 .footer__contacts ul li a:hover {
   color: #806566;
 }
 
 .footer__contacts ul li .-litle {
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: underline;
 }
 
 @media (max-width: 767px) {
   .footer__contacts ul li .-litle {
-    font-size: 13px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer__contacts ul li .-litle {
+    font-size: 18px;
   }
 }
 
 .footer__contacts ul li .icon-phonechat {
   position: absolute;
-  left: 50px;
+  left: 20px;
   top: 5px;
   font-size: 45px;
   color: #F3EDE2;
@@ -13058,7 +13070,7 @@ p {
 
 @media (max-width: 1199px) {
   .footer__contacts ul li .icon-phonechat {
-    left: 0;
+    left: 10px;
   }
 }
 
@@ -13070,14 +13082,14 @@ p {
 
 .footer__contacts ul li .icon-envelope {
   position: absolute;
-  left: 75px;
+  left: 45px;
   font-size: 15px;
   color: #F3EDE2;
 }
 
 @media (max-width: 1199px) {
   .footer__contacts ul li .icon-envelope {
-    left: 25px;
+    left: 20px;
   }
 }
 
